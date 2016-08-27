@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>ultima atualizacao: 26-08-2016 23:03</comment>
+<entry key="precovenda_10">20.0</entry>
+<entry key="codigo_10">10</entry>
+<entry key="precocusto_9">9.0</entry>
+<entry key="precocusto_8">8.0</entry>
+<entry key="precocusto_7">7.0</entry>
+<entry key="precocusto_6">6.0</entry>
+<entry key="precocusto_5">5.0</entry>
+<entry key="precocusto_4">4.0</entry>
+<entry key="precocusto_3">3.0</entry>
+<entry key="precocusto_2">2.0</entry>
+<entry key="precocusto_1">1.0</entry>
+<entry key="precovenda_9">18.0</entry>
+<entry key="precovenda_8">16.0</entry>
+<entry key="precovenda_7">14.0</entry>
+<entry key="precovenda_6">12.0</entry>
+<entry key="precovenda_5">10.0</entry>
+<entry key="precovenda_4">8.0</entry>
+<entry key="precovenda_3">6.0</entry>
+<entry key="precocusto_10">10.0</entry>
+<entry key="precovenda_2">4.0</entry>
+<entry key="precovenda_1">2.0</entry>
+<entry key="nome_10">produto10</entry>
+<entry key="codigo_9">9</entry>
+<entry key="codigo_8">8</entry>
+<entry key="codigo_7">7</entry>
+<entry key="codigo_6">6</entry>
+<entry key="codigo_5">5</entry>
+<entry key="codigo_4">4</entry>
+<entry key="codigo_3">3</entry>
+<entry key="codigo_2">2</entry>
+<entry key="codigo_1">1</entry>
+<entry key="nome_9">produto9</entry>
+<entry key="nome_8">produto8</entry>
+<entry key="nome_7">produto7</entry>
+<entry key="nome_6">produto6</entry>
+<entry key="nome_5">produto5</entry>
+<entry key="nome_4">produto4</entry>
+<entry key="nome_3">produto3</entry>
+<entry key="nome_2">produto2</entry>
+<entry key="nome_1">produto1</entry>
+</properties>

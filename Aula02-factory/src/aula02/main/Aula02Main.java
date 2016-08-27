@@ -7,6 +7,7 @@
 package aula02.main;
 
 import dados.Funcionario;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 //import modulos.emissor.EmissorFactory;
@@ -27,10 +28,10 @@ public class Aula02Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        
         new TelaLogin().setVisible(true);
-
-        /*
+       
+       /*
         GerenciadorArquivoFactory fabrica = GerenciadorArquivoFactory.getInstance();
         
         IGerenciadorArquivo gerenciador = fabrica.create(GerenciadorArquivoFactory.ARQUIVOSEPARADO);
