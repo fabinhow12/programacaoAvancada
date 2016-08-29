@@ -18,6 +18,7 @@ abstract class GerenciadorArquivo {
     protected static final String ARQUIVO_BANCO_DADOS_XML = "funcionarios.xml";
     protected static final String ARQUIVO_BANCO_DADOS_CLIENTE = "clientes.xml";
     protected static final String ARQUIVO_BANCO_DADOS_PRODUTO = "produtos.xml";
+    protected static final String ARQUIVO_BANCO_DADOS_VENDA= "vendas.xml";
     
 
     

@@ -1,10 +1,10 @@
 package dados;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.io.Serializable;
 import java.security.NoSuchAlgorithmException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import util.GerenciadorArquivoUnicoFuncionario;
 import util.Util;
 
 
@@ -14,6 +14,8 @@ import util.Util;
  * @author (seu nome) 
  * @version (número de versão ou data)
  */
+
+@XStreamAlias("funcionario")
 public class Funcionario extends Pessoa implements Serializable
 {
 

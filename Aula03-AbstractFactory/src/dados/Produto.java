@@ -5,16 +5,19 @@
  */
 package dados;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.io.Serializable;
 
 /**
  *
  * @author Douglas
  */
+@XStreamAlias("produto")
 public class Produto implements Serializable {
     
     public static final String NOME = "nome_";
-    public static final String CODIGO = "codigo_";   
+    public static final String CODIGO = "codigo_";  
+    public static final String DESCRICAO = "descricao_";
     public static final String PRECOCUSTO = "precocusto_";
     public static final String PRECOVENDA = "precovenda_";
     
@@ -74,19 +77,12 @@ public class Produto implements Serializable {
     
     
     // sobrecarga do método toString da classe Object
+
     @Override
     public String toString() {
-        
-        String relatorio = "";
-        relatorio += "Código: "+codigo;
-        relatorio += "\nNome: "+nome;
-        relatorio += "\nDescrição: "+desc;
-        relatorio += "\nPreço custo: "+precoCusto;        
-        relatorio += "\nPreço venda: "+precoVenda;
-        relatorio += "\nLucro: "+(precoVenda-precoCusto);
-        
-        return relatorio;
+        return "Produto{" + "codigo=" + codigo + ", nome=" + nome + ", desc=" + desc + ", precoVenda=" + precoVenda + ", precoCusto=" + precoCusto + '}';
     }
+   
 
 
     public int getCodigo() {

@@ -10,7 +10,10 @@ package telas;
  * @author fabio
  */
 public class TelaMenuCadastrar extends javax.swing.JFrame {
+
     private TelaCadastrarFuncionario telaCadastrarFuncionario;
+    private TelaCadastrarCliente telaCadastrarCliente;
+    private TelaCadastrarProduto telaCadastrarProduto;
 
     /**
      * Creates new form TelaMenuCadastrar
@@ -46,8 +49,18 @@ public class TelaMenuCadastrar extends javax.swing.JFrame {
         });
 
         jButton2.setText("Cadastrar Cliente");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Cadastrar Produto");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Sair");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -93,11 +106,30 @@ public class TelaMenuCadastrar extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // Cadastrar Funcionario
-        if (telaCadastrarFuncionario == null){
+        if (telaCadastrarFuncionario == null) {
             telaCadastrarFuncionario = new TelaCadastrarFuncionario();
         }
         telaCadastrarFuncionario.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // Cadastrar Cliente
+        
+        if (telaCadastrarCliente == null) {
+            telaCadastrarCliente = new TelaCadastrarCliente();
+            
+        }
+        telaCadastrarCliente.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // Cadastrar Produto
+        
+        if (telaCadastrarProduto == null) {
+            telaCadastrarProduto = new TelaCadastrarProduto();
+        }
+        telaCadastrarProduto.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -7,7 +7,7 @@ package repositorios;
 
 import dados.Produto;
 import java.util.ArrayList;
-import util.GerenciadorArquivoUnicoProduto;
+import util.GeraArquivoProduto;
 
 /**
  *
@@ -17,7 +17,7 @@ public class RepositorioProduto {
     private static RepositorioProduto instancia;
     
     private ArrayList<Produto> produtos;
-    private ArrayList<Produto> produtosEmArquivo;
+    
     
     private RepositorioProduto(){
         recuperaArquivos();
@@ -63,14 +63,14 @@ public class RepositorioProduto {
     private boolean salvarProduto(){
         boolean resultado = false;
         
-        GerenciadorArquivoUnicoProduto.salvarProdutos(produtos, produtosEmArquivo);
+        GeraArquivoProduto.salvarProdutos(produtos);
         
         return resultado;
     }
     
     private void recuperaArquivos(){
-        produtosEmArquivo = GerenciadorArquivoUnicoProduto.recuperarProdutos();
-        produtos = new ArrayList<>(produtosEmArquivo);
+        produtos = GeraArquivoProduto.recuperarProdutos();
+        
     }
     
 }

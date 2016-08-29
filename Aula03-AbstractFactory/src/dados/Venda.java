@@ -5,6 +5,8 @@
  */
 package dados;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -13,13 +15,50 @@ import java.util.Date;
  *
  * @author Douglas
  */
-public class Venda {
+
+@XStreamAlias("venda")
+public class Venda implements Serializable{
+    
+    public static final String CODIGO = "codigo_";
+    public static final String DATA = "data_";
+    public static final String ITENSVENDA = "itensvenda_";
+    public static final String FUNCIONARIO = "funcionario_";
+    public static final String CLIENTE = "cliente_";
+    public static final String VALORTOTAL = "valorTotal_";
+    
+    public static final String VISA = "VISA";
+    public static final String MASTER = "MASTER";
+    public static final String BOLETO = "BOLETO";
+    
+    
+    
     
     private int codigo;
     private Date data = new Date();
     private ArrayList<ItensVenda>itensVenda = new ArrayList<>();
     private Funcionario funcionario;
     private Cliente cliente;
+    private double valorTotal;
+    private String tipoCartao;
+
+    public String getTipoCartao() {
+        return tipoCartao;
+    }
+
+    public void setTipoCartao(String tipoCartao) {
+        this.tipoCartao = tipoCartao;
+    }
+
+    public static int getCodigoAutoIncremento() {
+        return codigoAutoIncremento;
+    }
+
+    public static void setCodigoAutoIncremento(int codigoAutoIncremento) {
+        Venda.codigoAutoIncremento = codigoAutoIncremento;
+    }
+
+   
+    
     
     private static int codigoAutoIncremento = 1;
     
@@ -28,6 +67,7 @@ public class Venda {
         this.codigo = codigoAutoIncremento++;
         this.funcionario = funcionario;
         this.cliente = cliente;
+        
     }
 
     public void adicionarItemVenda(Produto produto, int quantidade) {
@@ -39,6 +79,10 @@ public class Venda {
         funcionario.atualizarLucroDeVendas(lucro);
         funcionario.atualizarQuantideDeVendas(quantidade);
         
+    }
+    
+    public static void setContador(int contadorAtual){
+        Venda.codigoAutoIncremento = contadorAtual;
     }
     
     public ArrayList<ItensVenda> mostrarProdutosDaVenda() {
@@ -112,5 +156,33 @@ public class Venda {
     
     public ArrayList<ItensVenda> getProdutos() {
         return itensVenda;
+    }
+    
+    public double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public ArrayList<ItensVenda> getItensVenda() {
+        return itensVenda;
+    }
+
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
     }
 }

@@ -15,7 +15,7 @@ class ReceptorVisa implements IReceptor {
     public String recebe() {
         
         System.out.println("<<-- Recebendo mensagem da VISA <<--");
-        String mensagem = "Mensagem da VISA";
+        String mensagem = "Trasanção Efetuada com sucesso === VISA";
         
         return mensagem;
     }

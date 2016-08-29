@@ -7,10 +7,12 @@ package dados;
  * @author (seu nome) 
  * @version (número de versão ou data)
  */
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@XStreamAlias("cliente")
 public class Cliente extends Pessoa implements Serializable
 {
     
@@ -38,7 +40,7 @@ public class Cliente extends Pessoa implements Serializable
 
     @Override
     public String toString() {
-        String simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm").format(this.dataNascimento);
+        String simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy").format(this.dataNascimento);
         return "Cliente{" + "codigo=" + codigo +"Nome: "+this.nome+ ", dataNascimento=" + simpleDateFormat + ", cpf=" + cpf + '}';
     }
     

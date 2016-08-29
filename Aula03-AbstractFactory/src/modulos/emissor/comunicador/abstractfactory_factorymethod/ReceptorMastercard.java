@@ -14,7 +14,7 @@ class ReceptorMastercard implements IReceptor {
     @Override
     public String recebe() {
         System.out.println("<<-- Recebendo mensagem da MASTERCARD <<--");
-        String mensagem = "Mensagem da MASTERCARD";
+        String mensagem = "Transação Realizada com sucesso === MASTERCARD";
         
         return mensagem;
     }
