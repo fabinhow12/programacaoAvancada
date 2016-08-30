@@ -25,11 +25,23 @@ public class VendasTable extends AbstractTableModel {
     private RepositorioVenda repositorio;
 
     private ArrayList<Venda> listaVendas;
-    private final String[] colunas = {"Cod", "cod Func", "cod client", "valor total", "tipo pagamento"};
+    private final String[] colunas = {"Cód Venda", "Cód Func", "Cód client", "valor total", "tipo pagamento"};
 
     public VendasTable() {
         repositorio = RepositorioVenda.getInstancia();
         listaVendas = repositorio.getVendas();
+    }
+
+    public Venda getVendaLinha(int linha) {
+        Venda get = null;
+
+        if (linha == -1) {
+            return get;
+        } else {
+            get = this.listaVendas.get(linha);
+        }
+
+        return get;
     }
 
     @Override
@@ -45,9 +57,9 @@ public class VendasTable extends AbstractTableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         Venda get = this.listaVendas.get(rowIndex);
-        
-        switch (columnIndex){
-            
+
+        switch (columnIndex) {
+
             case CODIGO:
                 return get.getCodigo();
             case CODFUNC:
@@ -60,12 +72,12 @@ public class VendasTable extends AbstractTableModel {
                 return get.getTipoCartao();
             default:
                 return null;
-            
+
         }
     }
-    
+
     @Override
-    public String getColumnName(int columnIndex){
+    public String getColumnName(int columnIndex) {
         return this.colunas[columnIndex];
     }
 

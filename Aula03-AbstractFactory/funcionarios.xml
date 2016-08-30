@@ -5,8 +5,8 @@
     <salario>1846.0</salario>
     <login>funcionario1</login>
     <senha>e6b78617985d7fb806699b4a966e46dd</senha>
-    <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
-    <quantidadeVendas>0</quantidadeVendas>
+    <acumuladoLucroVendas>26.0</acumuladoLucroVendas>
+    <quantidadeVendas>14</quantidadeVendas>
   </funcionario>
   <funcionario>
     <nome>funcionario2</nome>
@@ -23,8 +23,8 @@
     <salario>1547.0</salario>
     <login>funcionario3</login>
     <senha>caa42deaf7dfd430876b5ed08d208d0a</senha>
-    <acumuladoLucroVendas>18.0</acumuladoLucroVendas>
-    <quantidadeVendas>16</quantidadeVendas>
+    <acumuladoLucroVendas>192.0</acumuladoLucroVendas>
+    <quantidadeVendas>170</quantidadeVendas>
   </funcionario>
   <funcionario>
     <nome>funcionario4</nome>
@@ -77,8 +77,8 @@
     <salario>985.0</salario>
     <login>funcionario9</login>
     <senha>643627d9762f8ddd64697d647d90e212</senha>
-    <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
-    <quantidadeVendas>0</quantidadeVendas>
+    <acumuladoLucroVendas>2.0</acumuladoLucroVendas>
+    <quantidadeVendas>4</quantidadeVendas>
   </funcionario>
   <funcionario>
     <nome>funcionario10</nome>
@@ -86,7 +86,7 @@
     <salario>1899.0</salario>
     <login>funcionario10</login>
     <senha>c33a6da701bfe2ff42fab480ff80e70a</senha>
-    <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
-    <quantidadeVendas>0</quantidadeVendas>
+    <acumuladoLucroVendas>10.0</acumuladoLucroVendas>
+    <quantidadeVendas>4</quantidadeVendas>
   </funcionario>
 </funcionarios>

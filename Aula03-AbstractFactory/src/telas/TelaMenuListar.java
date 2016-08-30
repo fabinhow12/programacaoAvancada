@@ -21,7 +21,7 @@ import repositorios.RepositorioProduto;
  * @author fabio
  */
 public class TelaMenuListar extends javax.swing.JFrame {
-
+    TelaListarVenda telaListarVenda;
     /**
      * Creates new form TelaListar
      */
@@ -194,6 +194,12 @@ public class TelaMenuListar extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // Listar Vendas
+        
+        if (telaListarVenda == null){
+            telaListarVenda = new TelaListarVenda();
+        }
+            telaListarVenda.setVisible(true);
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

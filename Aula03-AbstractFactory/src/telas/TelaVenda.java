@@ -50,9 +50,10 @@ public class TelaVenda extends javax.swing.JFrame {
      */
     public TelaVenda() {
         initComponents();
+        this.setLocationRelativeTo(null);
         tabela = new ItensVendaTable();
         this.jTable2.setModel(tabela);
-        this.setLocationRelativeTo(null);
+        
         this.jTNomeFunc.setEditable(false);
         this.jTNomeCliente.setEditable(false);
         this.JTNomePro.setEditable(false);
@@ -373,13 +374,7 @@ public class TelaVenda extends javax.swing.JFrame {
 
         if (opcao == JOptionPane.YES_OPTION) {
             this.dispose();
-            this.jTCodFunc.setEditable(true);
-            this.jTCodCliente.setEditable(true);
-            this.jBBuscaClinte.setEnabled(true);
-            this.jBBuscaFunc.setEnabled(true);
-            this.limpaTodosOsCampos();
-            ListaItensVenda.limpaLista();
-            tabela.atualizarTabela();
+            this.setTelaNovamente();
         }
 
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -584,6 +579,11 @@ public class TelaVenda extends javax.swing.JFrame {
             if (!"".equals(this.jTQuant.getText())) {
                 
                 itemVenda = new ItensVenda(Integer.parseInt(this.jTQuant.getText()), this.produto);
+                if (this.temNaLista(itemVenda)){
+                    
+                }else {
+                    
+                
                 ListaItensVenda.adicionaItem(itemVenda);
                 tabela.atualizarTabela();
                 this.setValorTotal();
@@ -593,6 +593,7 @@ public class TelaVenda extends javax.swing.JFrame {
                 this.jBBuscaFunc.setEnabled(false);
 
                 this.limpaCampoProduto();
+                }
             } else {
                 JOptionPane.showMessageDialog(rootPane, "preencha o campo de quantidade");
             }
@@ -627,6 +628,7 @@ public class TelaVenda extends javax.swing.JFrame {
                         this.preencheAVenda(Venda.BOLETO);
                         JOptionPane.showMessageDialog(rootPane, "Pagamento Feito \n"+"Venda Realizada com SUCESSO");
                         this.dispose();
+                        this.setTelaNovamente();
                      
                      }
                      
@@ -645,7 +647,9 @@ public class TelaVenda extends javax.swing.JFrame {
                          //Inicia A Venda A Partir do cartão
                          if (this.JComboBandeira.getSelectedItem() == "Visa"){
                              //Venda Com Cartão 
-                             
+                             int opcao = JOptionPane.showConfirmDialog(rootPane, "Tem certeza que quer finalizar a venda ? ", "Finalizar", JOptionPane.YES_NO_OPTION);
+
+                             if (opcao == JOptionPane.YES_OPTION){
                              IComunicadorFactory comunicadorFactory = new VisaComunicadorFactory();
                              String transacao = "Valor= "+this.jTValorTotal.getText()+";Número Cartão= "+this.jTNumCartao.getText()
                                      +";Número segurança= "+this.jTNumSegurança;
@@ -658,12 +662,17 @@ public class TelaVenda extends javax.swing.JFrame {
                              this.preencheAVenda(Venda.VISA);
                              JOptionPane.showMessageDialog(rootPane, mensagem+"\n"+"Venda Realizada com SUCESSO");
                              this.dispose();
+                             this.setTelaNovamente();
                              
-                            
+                             }
+                             
                          } else if (this.JComboBandeira.getSelectedItem() == "Master"){
                              //Venda Com Cartão Master
                              
+                             int opcao = JOptionPane.showConfirmDialog(rootPane, "Tem certeza que quer finalizar a venda ? ", "Finalizar", JOptionPane.YES_NO_OPTION);
+
                              
+                             if (opcao == JOptionPane.YES_OPTION){
                              IComunicadorFactory comunicadorFactory = new MastercardComunicadorFactory();
                              String transacao = "Valor= "+this.jTValorTotal.getText()+";Número Cartão= "+this.jTNumCartao.getText()
                                      +";Número segurança= "+this.jTNumSegurança;
@@ -676,6 +685,10 @@ public class TelaVenda extends javax.swing.JFrame {
                              this.preencheAVenda(Venda.MASTER);
                              JOptionPane.showMessageDialog(rootPane, mensagem+"\n"+"Venda Realizada com SUCESSO");
                              this.dispose();
+                             this.setTelaNovamente();
+                             
+                             
+                             }
                              
                          }
                          
@@ -715,6 +728,16 @@ public class TelaVenda extends javax.swing.JFrame {
 
     }
 
+    private void setTelaNovamente(){
+        this.jTCodFunc.setEditable(true);
+        this.jTCodCliente.setEditable(true);
+        this.jBBuscaClinte.setEnabled(true);
+        this.jBBuscaFunc.setEnabled(true);
+        this.limpaTodosOsCampos();
+        ListaItensVenda.limpaLista();
+        tabela.atualizarTabela();
+    }
+    
     private void limpaCampoProduto() {
         this.JTNomePro.setText("");
         this.jTPreco.setText("");
@@ -747,6 +770,29 @@ public class TelaVenda extends javax.swing.JFrame {
                         repositorioVenda.adicionarVenda(venda);
                         repositorio.editarFuncionario(this.funcionario);
                         
+    }
+    
+    private boolean temNaLista(ItensVenda item){
+        boolean result = false;
+        ArrayList<ItensVenda> lista = ListaItensVenda.listaItensVenda;
+        for (ItensVenda itensVenda : lista) {
+            
+            if (item.getProduto().getCodigo() == itensVenda.getProduto().getCodigo()){
+               int quantidadeAtual = itensVenda.getQuantidade();
+               
+               itensVenda.setQuantidade(quantidadeAtual + item.getQuantidade());
+               itensVenda.setSubTotal(itensVenda.getQuantidade() * itensVenda.getProduto().getPrecoVenda());
+               result = true;
+               tabela.atualizarTabela();
+                this.setValorTotal();
+               break;
+            }
+            
+               
+        }
+        
+        
+        return result;
     }
 
     /**

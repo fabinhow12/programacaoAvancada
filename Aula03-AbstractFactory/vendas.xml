@@ -1,7 +1,7 @@
 <vendas>
   <venda>
     <codigo>1</codigo>
-    <data>2016-08-29 23:01:03.904 UTC</data>
+    <data>2016-08-30 01:57:54.638 UTC</data>
     <itensVenda>
       <itens>
         <quantidade>3</quantidade>
@@ -13,50 +13,6 @@
           <precoCusto>3.0</precoCusto>
         </produto>
         <subTotal>18.0</subTotal>
-      </itens>
-    </itensVenda>
-    <funcionario>
-      <nome>funcionario2</nome>
-      <codigo>2</codigo>
-      <salario>1865.0</salario>
-      <login>funcionario2</login>
-      <senha>279b850eb472b50751f7fe94195cabe8</senha>
-      <acumuladoLucroVendas>3.0</acumuladoLucroVendas>
-      <quantidadeVendas>3</quantidadeVendas>
-    </funcionario>
-    <cliente>
-      <nome>Cliente10</nome>
-      <codigo>10</codigo>
-      <dataNascimento>2016-08-29 15:37:35.975 UTC</dataNascimento>
-      <cpf>469.656.981-01</cpf>
-    </cliente>
-    <valorTotal>18.0</valorTotal>
-    <tipoCartao>BOLETO</tipoCartao>
-  </venda>
-  <venda>
-    <codigo>1</codigo>
-    <data>2016-08-29 23:02:07.770 UTC</data>
-    <itensVenda>
-      <itens>
-        <quantidade>3</quantidade>
-        <produto>
-          <codigo>3</codigo>
-          <nome>produto3</nome>
-          <desc>ProdutoDesc3</desc>
-          <precoVenda>6.0</precoVenda>
-          <precoCusto>3.0</precoCusto>
-        </produto>
-        <subTotal>18.0</subTotal>
-      </itens>
-      <itens>
-        <quantidade>3</quantidade>
-        <produto reference="../../itens/produto"/>
-        <subTotal>18.0</subTotal>
-      </itens>
-      <itens>
-        <quantidade>2</quantidade>
-        <produto reference="../../itens/produto"/>
-        <subTotal>12.0</subTotal>
       </itens>
     </itensVenda>
     <funcionario>
@@ -65,8 +21,42 @@
       <salario>1547.0</salario>
       <login>funcionario3</login>
       <senha>caa42deaf7dfd430876b5ed08d208d0a</senha>
-      <acumuladoLucroVendas>9.0</acumuladoLucroVendas>
-      <quantidadeVendas>8</quantidadeVendas>
+      <acumuladoLucroVendas>21.0</acumuladoLucroVendas>
+      <quantidadeVendas>19</quantidadeVendas>
+    </funcionario>
+    <cliente>
+      <nome>Cliente2</nome>
+      <codigo>2</codigo>
+      <dataNascimento>2016-08-29 15:37:35.911 UTC</dataNascimento>
+      <cpf>839.164.466-90</cpf>
+    </cliente>
+    <valorTotal>18.0</valorTotal>
+    <tipoCartao>BOLETO</tipoCartao>
+  </venda>
+  <venda>
+    <codigo>2</codigo>
+    <data>2016-08-30 02:10:26.977 UTC</data>
+    <itensVenda>
+      <itens>
+        <quantidade>2</quantidade>
+        <produto>
+          <codigo>2</codigo>
+          <nome>produto2</nome>
+          <desc>ProdutoDesc2</desc>
+          <precoVenda>4.0</precoVenda>
+          <precoCusto>2.0</precoCusto>
+        </produto>
+        <subTotal>8.0</subTotal>
+      </itens>
+    </itensVenda>
+    <funcionario>
+      <nome>funcionario3</nome>
+      <codigo>3</codigo>
+      <salario>1547.0</salario>
+      <login>funcionario3</login>
+      <senha>caa42deaf7dfd430876b5ed08d208d0a</senha>
+      <acumuladoLucroVendas>44.0</acumuladoLucroVendas>
+      <quantidadeVendas>40</quantidadeVendas>
     </funcionario>
     <cliente>
       <nome>Cliente3</nome>
@@ -74,7 +64,199 @@
       <dataNascimento>2016-08-29 15:37:35.920 UTC</dataNascimento>
       <cpf>137.621.238-29</cpf>
     </cliente>
-    <valorTotal>48.0</valorTotal>
+    <valorTotal>8.0</valorTotal>
     <tipoCartao>MASTER</tipoCartao>
+  </venda>
+  <venda>
+    <codigo>3</codigo>
+    <data>2016-08-30 02:12:22.410 UTC</data>
+    <itensVenda>
+      <itens>
+        <quantidade>1</quantidade>
+        <produto>
+          <codigo>1</codigo>
+          <nome>produto1</nome>
+          <desc>ProdutoDesc1</desc>
+          <precoVenda>2.0</precoVenda>
+          <precoCusto>1.0</precoCusto>
+        </produto>
+        <subTotal>2.0</subTotal>
+      </itens>
+      <itens>
+        <quantidade>3</quantidade>
+        <produto>
+          <codigo>2</codigo>
+          <nome>produto2</nome>
+          <desc>ProdutoDesc2</desc>
+          <precoVenda>4.0</precoVenda>
+          <precoCusto>2.0</precoCusto>
+        </produto>
+        <subTotal>12.0</subTotal>
+      </itens>
+      <itens>
+        <quantidade>1</quantidade>
+        <produto>
+          <codigo>5</codigo>
+          <nome>produto5</nome>
+          <desc>ProdutoDesc5</desc>
+          <precoVenda>10.0</precoVenda>
+          <precoCusto>5.0</precoCusto>
+        </produto>
+        <subTotal>10.0</subTotal>
+      </itens>
+    </itensVenda>
+    <funcionario>
+      <nome>funcionario3</nome>
+      <codigo>3</codigo>
+      <salario>1547.0</salario>
+      <login>funcionario3</login>
+      <senha>caa42deaf7dfd430876b5ed08d208d0a</senha>
+      <acumuladoLucroVendas>96.0</acumuladoLucroVendas>
+      <quantidadeVendas>85</quantidadeVendas>
+    </funcionario>
+    <cliente>
+      <nome>Fábio Henrique da Silva Siqueira</nome>
+      <codigo>11</codigo>
+      <dataNascimento>1998-03-08 03:00:00.0 UTC</dataNascimento>
+      <cpf>115.723.264-76</cpf>
+    </cliente>
+    <valorTotal>24.0</valorTotal>
+    <tipoCartao>BOLETO</tipoCartao>
+  </venda>
+  <venda>
+    <codigo>4</codigo>
+    <data>2016-08-30 02:18:01.120 UTC</data>
+    <itensVenda>
+      <itens>
+        <quantidade>2</quantidade>
+        <produto>
+          <codigo>1</codigo>
+          <nome>produto1</nome>
+          <desc>ProdutoDesc1</desc>
+          <precoVenda>2.0</precoVenda>
+          <precoCusto>1.0</precoCusto>
+        </produto>
+        <subTotal>4.0</subTotal>
+      </itens>
+    </itensVenda>
+    <funcionario>
+      <nome>funcionario9</nome>
+      <codigo>9</codigo>
+      <salario>985.0</salario>
+      <login>funcionario9</login>
+      <senha>643627d9762f8ddd64697d647d90e212</senha>
+      <acumuladoLucroVendas>2.0</acumuladoLucroVendas>
+      <quantidadeVendas>4</quantidadeVendas>
+    </funcionario>
+    <cliente>
+      <nome>Cliente2</nome>
+      <codigo>2</codigo>
+      <dataNascimento>2016-08-29 15:37:35.911 UTC</dataNascimento>
+      <cpf>839.164.466-90</cpf>
+    </cliente>
+    <valorTotal>4.0</valorTotal>
+    <tipoCartao>BOLETO</tipoCartao>
+  </venda>
+  <venda>
+    <codigo>5</codigo>
+    <data>2016-08-30 02:19:35.215 UTC</data>
+    <itensVenda>
+      <itens>
+        <quantidade>2</quantidade>
+        <produto>
+          <codigo>5</codigo>
+          <nome>produto5</nome>
+          <desc>ProdutoDesc5</desc>
+          <precoVenda>10.0</precoVenda>
+          <precoCusto>5.0</precoCusto>
+        </produto>
+        <subTotal>20.0</subTotal>
+      </itens>
+    </itensVenda>
+    <funcionario>
+      <nome>funcionario10</nome>
+      <codigo>10</codigo>
+      <salario>1899.0</salario>
+      <login>funcionario10</login>
+      <senha>c33a6da701bfe2ff42fab480ff80e70a</senha>
+      <acumuladoLucroVendas>5.0</acumuladoLucroVendas>
+      <quantidadeVendas>2</quantidadeVendas>
+    </funcionario>
+    <cliente>
+      <nome>Cliente10</nome>
+      <codigo>10</codigo>
+      <dataNascimento>2016-08-29 15:37:35.975 UTC</dataNascimento>
+      <cpf>469.656.981-01</cpf>
+    </cliente>
+    <valorTotal>20.0</valorTotal>
+    <tipoCartao>MASTER</tipoCartao>
+  </venda>
+  <venda>
+    <codigo>1</codigo>
+    <data>2016-08-30 02:27:58.330 UTC</data>
+    <itensVenda>
+      <itens>
+        <quantidade>3</quantidade>
+        <produto>
+          <codigo>3</codigo>
+          <nome>produto3</nome>
+          <desc>ProdutoDesc3</desc>
+          <precoVenda>6.0</precoVenda>
+          <precoCusto>3.0</precoCusto>
+        </produto>
+        <subTotal>18.0</subTotal>
+      </itens>
+    </itensVenda>
+    <funcionario>
+      <nome>funcionario1</nome>
+      <codigo>1</codigo>
+      <salario>1846.0</salario>
+      <login>funcionario1</login>
+      <senha>e6b78617985d7fb806699b4a966e46dd</senha>
+      <acumuladoLucroVendas>3.0</acumuladoLucroVendas>
+      <quantidadeVendas>3</quantidadeVendas>
+    </funcionario>
+    <cliente>
+      <nome>Cliente2</nome>
+      <codigo>2</codigo>
+      <dataNascimento>2016-08-29 15:37:35.911 UTC</dataNascimento>
+      <cpf>839.164.466-90</cpf>
+    </cliente>
+    <valorTotal>18.0</valorTotal>
+    <tipoCartao>MASTER</tipoCartao>
+  </venda>
+  <venda>
+    <codigo>1</codigo>
+    <data>2016-08-30 02:30:01.174 UTC</data>
+    <itensVenda>
+      <itens>
+        <quantidade>1</quantidade>
+        <produto>
+          <codigo>7</codigo>
+          <nome>produto7</nome>
+          <desc>ProdutoDesc7</desc>
+          <precoVenda>14.0</precoVenda>
+          <precoCusto>7.0</precoCusto>
+        </produto>
+        <subTotal>14.0</subTotal>
+      </itens>
+    </itensVenda>
+    <funcionario>
+      <nome>funcionario1</nome>
+      <codigo>1</codigo>
+      <salario>1846.0</salario>
+      <login>funcionario1</login>
+      <senha>e6b78617985d7fb806699b4a966e46dd</senha>
+      <acumuladoLucroVendas>13.0</acumuladoLucroVendas>
+      <quantidadeVendas>7</quantidadeVendas>
+    </funcionario>
+    <cliente>
+      <nome>Cliente1</nome>
+      <codigo>1</codigo>
+      <dataNascimento>2016-08-29 15:37:35.901 UTC</dataNascimento>
+      <cpf>718.815.470-86</cpf>
+    </cliente>
+    <valorTotal>14.0</valorTotal>
+    <tipoCartao>BOLETO</tipoCartao>
   </venda>
 </vendas>
