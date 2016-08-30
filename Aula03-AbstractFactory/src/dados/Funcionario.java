@@ -37,6 +37,14 @@ public class Funcionario extends Pessoa implements Serializable
     // TODO permitir os dados abaixo serem guardados no arquivo
     private double acumuladoLucroVendas;
     private int quantidadeVendas;
+
+    public double getAcumuladoLucroVendas() {
+        return acumuladoLucroVendas;
+    }
+
+    public int getQuantidadeVendas() {
+        return quantidadeVendas;
+    }
     
     
 

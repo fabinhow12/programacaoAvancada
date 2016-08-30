@@ -92,12 +92,29 @@ public class RepositorioPessoa {
 
         salvarFuncionarios();
     }
+    
+    public void editarFuncionario(Funcionario funcionario){
+        
+        for (Funcionario f : funcionarios) {
+            
+            if (funcionario.getCodigo() == f.getCodigo()){
+                f.atualizarLucroDeVendas(funcionario.getAcumuladoLucroVendas());
+                f.atualizarQuantideDeVendas(funcionario.getQuantidadeVendas());
+                break;
+            }
+            
+        }
+        
+        salvarFuncionarios();
+    }
 
     public void adicionarCliente(Cliente cliente) {
         
         this.clientes.add(cliente);
         salvarClientes();
     }
+    
+   
 
     private boolean salvarFuncionarios() {
         boolean resultado = false;

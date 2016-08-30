@@ -2,7 +2,7 @@
   <funcionario>
     <nome>funcionario1</nome>
     <codigo>1</codigo>
-    <salario>941.0</salario>
+    <salario>1846.0</salario>
     <login>funcionario1</login>
     <senha>e6b78617985d7fb806699b4a966e46dd</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
@@ -11,25 +11,25 @@
   <funcionario>
     <nome>funcionario2</nome>
     <codigo>2</codigo>
-    <salario>1837.0</salario>
+    <salario>1865.0</salario>
     <login>funcionario2</login>
     <senha>279b850eb472b50751f7fe94195cabe8</senha>
-    <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
-    <quantidadeVendas>0</quantidadeVendas>
+    <acumuladoLucroVendas>6.0</acumuladoLucroVendas>
+    <quantidadeVendas>6</quantidadeVendas>
   </funcionario>
   <funcionario>
     <nome>funcionario3</nome>
     <codigo>3</codigo>
-    <salario>1693.0</salario>
+    <salario>1547.0</salario>
     <login>funcionario3</login>
     <senha>caa42deaf7dfd430876b5ed08d208d0a</senha>
-    <acumuladoLucroVendas>13.0</acumuladoLucroVendas>
-    <quantidadeVendas>6</quantidadeVendas>
+    <acumuladoLucroVendas>18.0</acumuladoLucroVendas>
+    <quantidadeVendas>16</quantidadeVendas>
   </funcionario>
   <funcionario>
     <nome>funcionario4</nome>
     <codigo>4</codigo>
-    <salario>1766.0</salario>
+    <salario>1043.0</salario>
     <login>funcionario4</login>
     <senha>74b2c8d66699da7a00ce7b9bca0fdb43</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
@@ -38,7 +38,7 @@
   <funcionario>
     <nome>funcionario5</nome>
     <codigo>5</codigo>
-    <salario>1966.0</salario>
+    <salario>905.0</salario>
     <login>funcionario5</login>
     <senha>a4fb4d675894121eef28ee2037dd5a48</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
@@ -47,7 +47,7 @@
   <funcionario>
     <nome>funcionario6</nome>
     <codigo>6</codigo>
-    <salario>1338.0</salario>
+    <salario>1802.0</salario>
     <login>funcionario6</login>
     <senha>9e8fd8436db12743224208edd6b0b3d3</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
@@ -56,7 +56,7 @@
   <funcionario>
     <nome>funcionario7</nome>
     <codigo>7</codigo>
-    <salario>1890.0</salario>
+    <salario>906.0</salario>
     <login>funcionario7</login>
     <senha>ee56c08f3acb00de0ac8c10939d0f63d</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
@@ -65,7 +65,7 @@
   <funcionario>
     <nome>funcionario8</nome>
     <codigo>8</codigo>
-    <salario>1334.0</salario>
+    <salario>1838.0</salario>
     <login>funcionario8</login>
     <senha>546f05f282e7672f88c6e796b972a110</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
@@ -74,7 +74,7 @@
   <funcionario>
     <nome>funcionario9</nome>
     <codigo>9</codigo>
-    <salario>1995.0</salario>
+    <salario>985.0</salario>
     <login>funcionario9</login>
     <senha>643627d9762f8ddd64697d647d90e212</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
@@ -83,12 +83,10 @@
   <funcionario>
     <nome>funcionario10</nome>
     <codigo>10</codigo>
-    <salario>1173.0</salario>
+    <salario>1899.0</salario>
     <login>funcionario10</login>
     <senha>c33a6da701bfe2ff42fab480ff80e70a</senha>
     <acumuladoLucroVendas>0.0</acumuladoLucroVendas>
     <quantidadeVendas>0</quantidadeVendas>
   </funcionario>
-  <funcionario reference="../funcionario[3]"/>
-  <funcionario reference="../funcionario[3]"/>
 </funcionarios>

@@ -543,6 +543,7 @@ public class TelaVenda extends javax.swing.JFrame {
             this.jBBuscaClinte.setEnabled(true);
             this.jBBuscaFunc.setEnabled(true);
             this.setValorTotal();
+            this.jTValorTotal.setText("");
 
         }
 
@@ -581,6 +582,7 @@ public class TelaVenda extends javax.swing.JFrame {
         if (!"".equals(jTNomeFunc.getText()) && !"".equals(jTNomeCliente.getText()) && !"".equals(JTNomePro.getText())) {
 
             if (!"".equals(this.jTQuant.getText())) {
+                
                 itemVenda = new ItensVenda(Integer.parseInt(this.jTQuant.getText()), this.produto);
                 ListaItensVenda.adicionaItem(itemVenda);
                 tabela.atualizarTabela();
@@ -655,6 +657,7 @@ public class TelaVenda extends javax.swing.JFrame {
                              String mensagem = receptor.recebe();
                              this.preencheAVenda(Venda.VISA);
                              JOptionPane.showMessageDialog(rootPane, mensagem+"\n"+"Venda Realizada com SUCESSO");
+                             this.dispose();
                              
                             
                          } else if (this.JComboBandeira.getSelectedItem() == "Master"){
@@ -672,6 +675,7 @@ public class TelaVenda extends javax.swing.JFrame {
                              String mensagem = receptor.recebe();
                              this.preencheAVenda(Venda.MASTER);
                              JOptionPane.showMessageDialog(rootPane, mensagem+"\n"+"Venda Realizada com SUCESSO");
+                             this.dispose();
                              
                          }
                          
@@ -741,7 +745,7 @@ public class TelaVenda extends javax.swing.JFrame {
                      
                         RepositorioVenda repositorioVenda = RepositorioVenda.getInstancia();
                         repositorioVenda.adicionarVenda(venda);
-                        repositorio.adicionarFuncionario(this.funcionario);
+                        repositorio.editarFuncionario(this.funcionario);
                         
     }
 
