@@ -69,18 +69,4 @@
     <precoVenda>20.0</precoVenda>
     <precoCusto>10.0</precoCusto>
   </produto>
-  <produto>
-    <codigo>11</codigo>
-    <nome>produtoTeste</nome>
-    <desc>teste</desc>
-    <precoVenda>200.0</precoVenda>
-    <precoCusto>100.0</precoCusto>
-  </produto>
-  <produto>
-    <codigo>12</codigo>
-    <nome>teste3</nome>
-    <desc>teste3</desc>
-    <precoVenda>1000.0</precoVenda>
-    <precoCusto>500.0</precoCusto>
-  </produto>
 </produtos>

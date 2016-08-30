@@ -26,7 +26,9 @@ public class RepositorioVenda {
            
         if (instancia == null){
             synchronized (RepositorioVenda.class){
+                if (instancia == null){
                 instancia = new RepositorioVenda();
+                }
             }
         }
         

@@ -2,67 +2,61 @@
   <cliente>
     <nome>Cliente1</nome>
     <codigo>1</codigo>
-    <dataNascimento>2016-08-29 15:37:35.901 UTC</dataNascimento>
-    <cpf>718.815.470-86</cpf>
+    <dataNascimento>2016-08-30 03:00:35.429 UTC</dataNascimento>
+    <cpf>318.529.786-51</cpf>
   </cliente>
   <cliente>
     <nome>Cliente2</nome>
     <codigo>2</codigo>
-    <dataNascimento>2016-08-29 15:37:35.911 UTC</dataNascimento>
-    <cpf>839.164.466-90</cpf>
+    <dataNascimento>2016-08-30 03:00:35.460 UTC</dataNascimento>
+    <cpf>454.562.621-18</cpf>
   </cliente>
   <cliente>
     <nome>Cliente3</nome>
     <codigo>3</codigo>
-    <dataNascimento>2016-08-29 15:37:35.920 UTC</dataNascimento>
-    <cpf>137.621.238-29</cpf>
+    <dataNascimento>2016-08-30 03:00:35.470 UTC</dataNascimento>
+    <cpf>970.694.326-90</cpf>
   </cliente>
   <cliente>
     <nome>Cliente4</nome>
     <codigo>4</codigo>
-    <dataNascimento>2016-08-29 15:37:35.929 UTC</dataNascimento>
-    <cpf>701.933.089-40</cpf>
+    <dataNascimento>2016-08-30 03:00:35.489 UTC</dataNascimento>
+    <cpf>302.721.656-20</cpf>
   </cliente>
   <cliente>
     <nome>Cliente5</nome>
     <codigo>5</codigo>
-    <dataNascimento>2016-08-29 15:37:35.943 UTC</dataNascimento>
-    <cpf>365.082.342-00</cpf>
+    <dataNascimento>2016-08-30 03:00:35.495 UTC</dataNascimento>
+    <cpf>316.246.776-49</cpf>
   </cliente>
   <cliente>
     <nome>Cliente6</nome>
     <codigo>6</codigo>
-    <dataNascimento>2016-08-29 15:37:35.949 UTC</dataNascimento>
-    <cpf>308.033.896-04</cpf>
+    <dataNascimento>2016-08-30 03:00:35.506 UTC</dataNascimento>
+    <cpf>843.737.793-50</cpf>
   </cliente>
   <cliente>
     <nome>Cliente7</nome>
     <codigo>7</codigo>
-    <dataNascimento>2016-08-29 15:37:35.956 UTC</dataNascimento>
-    <cpf>553.752.172-52</cpf>
+    <dataNascimento>2016-08-30 03:00:35.515 UTC</dataNascimento>
+    <cpf>358.662.861-73</cpf>
   </cliente>
   <cliente>
     <nome>Cliente8</nome>
     <codigo>8</codigo>
-    <dataNascimento>2016-08-29 15:37:35.964 UTC</dataNascimento>
-    <cpf>539.153.301-59</cpf>
+    <dataNascimento>2016-08-30 03:00:35.523 UTC</dataNascimento>
+    <cpf>992.888.667-95</cpf>
   </cliente>
   <cliente>
     <nome>Cliente9</nome>
     <codigo>9</codigo>
-    <dataNascimento>2016-08-29 15:37:35.970 UTC</dataNascimento>
-    <cpf>499.140.003-12</cpf>
+    <dataNascimento>2016-08-30 03:00:35.534 UTC</dataNascimento>
+    <cpf>188.643.775-06</cpf>
   </cliente>
   <cliente>
     <nome>Cliente10</nome>
     <codigo>10</codigo>
-    <dataNascimento>2016-08-29 15:37:35.975 UTC</dataNascimento>
-    <cpf>469.656.981-01</cpf>
-  </cliente>
-  <cliente>
-    <nome>Fábio Henrique da Silva Siqueira</nome>
-    <codigo>11</codigo>
-    <dataNascimento>1998-03-08 03:00:00.0 UTC</dataNascimento>
-    <cpf>115.723.264-76</cpf>
+    <dataNascimento>2016-08-30 03:00:35.540 UTC</dataNascimento>
+    <cpf>615.133.015-35</cpf>
   </cliente>
 </clientes>
